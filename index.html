@@ -1,1 +1,174 @@
 
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>اسناد زمین حاج ولی نبی‌زاده</title>
+
+<style>
+
+body{
+margin:0;
+font-family:tahoma;
+background:#f4efe2;
+}
+
+#login{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,0,0,.2);
+text-align:center;
+width:320px;
+}
+
+input{
+width:90%;
+padding:12px;
+font-size:18px;
+margin-top:15px;
+}
+
+button{
+margin-top:20px;
+padding:12px 25px;
+font-size:18px;
+cursor:pointer;
+}
+
+#gallery{
+display:none;
+padding:20px;
+}
+
+h1{
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+position:relative;
+}
+
+.card img{
+width:100%;
+border-radius:12px;
+}
+
+.watermark{
+position:absolute;
+bottom:8px;
+left:8px;
+font-size:18px;
+opacity:.10;
+font-weight:bold;
+pointer-events:none;
+}
+
+</style>
+
+</head>
+
+<body oncontextmenu="return false">
+
+<div id="login">
+
+<div class="box">
+
+<h2>اسناد زمین حاج ولی نبی‌زاده</h2>
+
+<input id="pass" type="password" placeholder="رمز ورود">
+
+<br>
+
+<button onclick="check()">ورود</button>
+
+<p id="msg" style="color:red"></p>
+
+</div>
+
+</div>
+
+<div id="gallery">
+
+<h1>اسناد زمین حاج ولی نبی‌زاده</h1>
+
+<div class="grid">
+
+<div class="card">
+<img src="images/1.jpg">
+<div class="watermark">
+اسناد زمین حاج ولی نبی‌زاده
+</div>
+</div>
+
+<div class="card">
+<img src="images/2.jpg">
+<div class="watermark">
+اسناد زمین حاج ولی نبی‌زاده
+</div>
+</div>
+
+<div class="card">
+<img src="images/3.jpg">
+<div class="watermark">
+اسناد زمین حاج ولی نبی‌زاده
+</div>
+</div>
+
+<div class="card">
+<img src="images/4.jpg">
+<div class="watermark">
+اسناد زمین حاج ولی نبی‌زاده
+</div>
+</div>
+
+<div class="card">
+<img src="images/5.jpg">
+<div class="watermark">
+اسناد زمین حاج ولی نبی‌زاده
+</div>
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function check(){
+
+if(document.getElementById("pass").value=="1730540"){
+
+document.getElementById("login").style.display="none";
+
+document.getElementById("gallery").style.display="block";
+
+}else{
+
+document.getElementById("msg").innerHTML="رمز اشتباه است";
+
+}
+
+}
+
+document.addEventListener("dragstart",e=>e.preventDefault());
+
+</script>
+
+</body>
+
+  </html>
